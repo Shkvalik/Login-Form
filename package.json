@@ -4,7 +4,8 @@
   "description": "Test Task for CodeIT",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon routes.js"
+    "devStart": "nodemon routes.js",
+    "start": "node routes.js"
   },
   "keywords": [],
   "author": "Valentyn Kovalenko",
