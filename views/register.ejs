@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register Form</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="header"><h1>Register Form:</h1></div>
+<div class="main-container">
+<form action="/register" method="post">
+    <div class="content">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <br>
+    <div class="content">
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login" required>
+    </div>
+    <br>
+    <div class="content">
+        <label for="real_name">Real Name:</label>
+        <input type="text" id="real_name" name="real_name" required>
+    </div>
+    <br>
+    <div class="content">
+        <label for="user_password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <br>
+    <div class="content">
+        <label for="birth_date">Birth Date:</label>
+        <input type="date" id="birth_date" name="birth_date" required>
+    </div>
+    <br>
+    <div class="content">
+        <label for="country">Country:</label>
+        <select id = 'country' name = 'country' required>
+            <% for (var i = 0; i<country.length; i++) { %>
+                <option value = '<%= i + 1%>'><%= country[i].country_name %></option>
+            <% } %>
+        </select>
+    </div>
+    <br>
+    <div class="content">
+        <label for="conditions">Terms and Conditions:</label>
+        <input type="checkbox" id="conditions" name="conditions" required>
+    </div>
+    <button class="submit" type="submit">Confirm</button>
+</form>
+</div>
+
+<button><a href="/login">Sign in</a></button>
+</body>
+</html>
