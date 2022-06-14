@@ -1,6 +1,7 @@
 const bcrypt = require("bcryptjs");
 require("dotenv").config();
 const Pool = require('pg').Pool
+//Create .env file and get data from it
 const pool = new Pool({
     user: process.env.USER,
     password: process.env.PASSWORD,
@@ -13,7 +14,7 @@ class DataBase {
     async createUser(email, login, real_name, password, birth_date, country, timestamp) {
         await pool.query(`INSERT INTO users(email, login, real_name, password, birth_date, country_id, user_timestamp_registration)
                           VALUES ($1, $2, $3, $4, $5, $6,
-                                  $7)`, [email, login, real_name, password, birth_date, country, timestamp], (err, res) => {
+                                  $7)`, [email, login, real_name, password, birth_date, country, timestamp], (err) => {
             console.log(err)
         })
     }

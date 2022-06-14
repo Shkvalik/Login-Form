@@ -68,6 +68,6 @@ app.post('/login', async (req, res) => {
         res.redirect(`login/${req.body.login + '$' + req.body.password}`)
     }
 })
-
+//Create .env file and get data from it
 app.listen(process.env.HTTPPORT || '8000')
 console.log(`Link ---> http://localhost:${process.env.HTTPPORT}`) // for dev
