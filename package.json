@@ -2,7 +2,7 @@
   "name": "login_form",
   "version": "1.0.0",
   "description": "Test Task for CodeIT",
-  "main": "index.js",
+  "main": "routes.js",
   "scripts": {
     "devStart": "nodemon routes.js",
     "start": "node routes.js"
