@@ -5,7 +5,7 @@
 ```bash
 npm run devStart
 ```
-#### Ussual run:
+#### Usual run:
 ```bash
 npm run start
 ```
@@ -17,7 +17,8 @@ npm run start
 * Postgres 14+
 * HTML/CSS/EJS
 
+#### Client:
+Company "CodeIT"
 
 #### Developers:
-Shkvalik
-`valikko2004@gmail.com`
+Valentin Kovalenko `valikko2004@gmail.com`
